@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-basic-frontend-home-screen-that-welcomes-the-user-and-prompts-them-to-define-what-kind-of-app-they-want-to-build-e-g-a-short-form-with-fields-like-app-idea-target-users-and-key-features-and-display-the-entered-text-back-on-the-page-as-a-local-preview-no-persistence-required",
+      "title": "Create a basic frontend home screen that welcomes the user and prompts them to define what kind of app they want to build (e.g., a short form with fields like “App idea”, “Target users”, and “Key features”), and display the entered text back on the page as a local preview (no persistence required).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-distinct-visual-theme-across-the-app-colors-typography-spacing-and-component-styling-appropriate-for-a-generic-app-builder-welcome-experience-avoid-blue-purple-as-primary-colors",
+      "title": "Apply a coherent, distinct visual theme across the app (colors, typography, spacing, and component styling) appropriate for a generic app builder welcome experience; avoid blue/purple as primary colors.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Implement a minimal backend canister endpoint that can be called from the frontend to verify connectivity (e.g., a query method returning a short English status string).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Initial app scaffold with welcome screen and project setup",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

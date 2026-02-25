@@ -1,0 +1,60 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Welcome screen scaffold with themed UI (frontend-only)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a single-page welcome screen with an app-definition form and a live, in-page preview of the submitted content (no persistence).",
+      "acceptanceCriteria": [
+        "Visiting the app shows a clearly labeled welcome screen.",
+        "A small form collects at least: App idea, Target users, Key features.",
+        "Submitting the form renders a readable summary on the same page without reloading.",
+        "All user-facing text is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the main React screen containing: a welcome header, a form with fields for “App idea”, “Target users”, and “Key features”, and a local preview section that renders the submitted values without a page reload. Use shadcn-ui components (e.g., Card, Button, Input, Textarea, Label) to ensure consistent UI styling; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Ensure the app correctly imports global styles and renders the new App component so the welcome screen is visible on first load (no routing). If needed, adjust the CSS import to match the project’s actual stylesheet location."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add the stylesheet file expected by frontend/src/main.tsx and wire Tailwind directives and base styles (either by importing from an existing global stylesheet or containing the Tailwind layers directly) so the welcome UI is styled (not default browser styling)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Apply a coherent, distinct visual theme (colors, typography, spacing, component styling) suitable for an app-builder welcome experience, avoiding blue/purple as primary accents.",
+      "acceptanceCriteria": [
+        "The home screen uses a consistent color palette, typography scale, and spacing system.",
+        "Primary color scheme does not use blue/purple as the main accent.",
+        "The UI looks intentional (not default browser styling)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.css",
+          "operation": "modify",
+          "description": "Update the design tokens/CSS variables (e.g., --primary, --ring, accent-related variables) to establish a distinct non-blue/non-purple primary accent (e.g., warm amber/orange or green) and consistent base typography/spacing defaults."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust Tailwind theme extensions only as needed to support the chosen visual system (e.g., container sizing, typography plugin usage, spacing rhythm), keeping styling coherent across the welcome screen."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the theme consistently via Tailwind utility classes and shadcn-ui component variants (e.g., spacing scale, typographic hierarchy, card layout) so the page reads as a cohesive welcome experience; verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

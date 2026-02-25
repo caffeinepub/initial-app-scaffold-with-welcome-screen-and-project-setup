@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Defines a simple canister actor exposing a query method that returns a status text.",
+  "feature_evidence.json": "Contains feature evidence metadata listing implemented frontend files, components, and confidence levels.",
+  "frontend-file-summaries.txt": "Provides prewritten one-line summaries for key frontend files and their roles.",
+  "frontend/index.css": "Tailwind base styles defining OKLCH color variables and theming for light and dark modes.",
+  "frontend/index.html": "HTML entry point that loads the React app via main.tsx.",
+  "frontend/src/App.tsx": "Main React component with a themed welcome UI, form for app idea input, and backend status display.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and manages an authenticated or anonymous backend actor and refreshes dependent queries.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity authentication context and provider with login, logout, and identity persistence.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for fetching backend status using the actor instance.",
+  "frontend/src/index.css": "Tailwind-based stylesheet defining a warm amber/orange theme with OKLCH variables for light and dark modes.",
+  "frontend/src/main.tsx": "React entry file mounting the app with React Query and Internet Identity providers.",
+  "frontend/tailwind.config.js": "Tailwind config extending theme colors, radii, shadows, fonts, and animations using custom CSS variables.",
+  "project_state.json": "Describes the project’s current state, implemented frontend features, and a pending backend connectivity request. Includes metadata like schema version, project name, and clarification settings."
+}

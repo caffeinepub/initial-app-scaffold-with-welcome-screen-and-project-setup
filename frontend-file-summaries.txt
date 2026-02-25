@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main application component featuring a welcome screen with a form to define app concepts (idea, target users, key features) and a live preview panel that displays submitted content without page reload, plus backend connectivity status indicator.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook that fetches and caches the backend status using the actor interface.",
+  "frontend/src/index.css": "Global stylesheet with OKLCH color system defining a warm amber/orange theme (avoiding blue/purple) for both light and dark modes with consistent design tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom colors mapped to CSS variables, enhanced border radius options, custom shadows, and Inter font family for a modern, cohesive design system."
+}

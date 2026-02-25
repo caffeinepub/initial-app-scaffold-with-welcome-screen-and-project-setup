@@ -1,0 +1,73 @@
+{
+  "kind": "build_request",
+  "title": "Initial app scaffold with welcome screen and project setup",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a basic frontend home screen that welcomes the user and prompts them to define what kind of app they want to build (e.g., a short form with fields like “App idea”, “Target users”, and “Key features”), and display the entered text back on the page as a local preview (no persistence required).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "create app"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visiting the app shows a clearly labeled welcome screen.",
+        "A small form collects at least: App idea, Target users, Key features.",
+        "Submitting the form renders a readable summary on the same page without reloading.",
+        "All user-facing text is in English."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a minimal backend canister endpoint that can be called from the frontend to verify connectivity (e.g., a query method returning a short English status string).",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "create app"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend exposes at least one query method that returns a status string.",
+        "Frontend can call the backend method and render the returned status on the home screen."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a coherent, distinct visual theme across the app (colors, typography, spacing, and component styling) appropriate for a generic app builder welcome experience; avoid blue/purple as primary colors.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The home screen uses a consistent color palette, typography scale, and spacing system.",
+        "Primary color scheme does not use blue/purple as the main accent.",
+        "The UI looks intentional (not default browser styling)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use React + TypeScript with Tailwind and the existing UI component library without modifying immutable paths under frontend/src/components/ui or the specified immutable hooks files.",
+    "Keep all Motoko backend logic in the single actor in backend/main.mo; do not introduce additional backend services.",
+    "All user-facing text must be in English."
+  ],
+  "nonGoals": [
+    "User authentication (Internet Identity) integration.",
+    "Data persistence of the form inputs.",
+    "Multi-page routing or complex navigation.",
+    "Any third-party API integrations."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

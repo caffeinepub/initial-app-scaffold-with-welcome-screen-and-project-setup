@@ -1,0 +1,45 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-basic-frontend-home-screen-that-welcomes-the-user-and-prompts-them-to-define-what-kind-of-app-they-want-to-build-e-g-a-short-form-with-fields-like-app-idea-target-users-and-key-features-and-display-the-entered-text-back-on-the-page-as-a-local-preview-no-persistence-required",
+      "featureTitle": "Create a basic frontend home screen that welcomes the user and prompts them to define what kind of app they want to build (e.g., a short form with fields like “App idea”, “Target users”, and “Key features”), and display the entered text back on the page as a local preview (no persistence required).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/src/main.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-coherent-distinct-visual-theme-across-the-app-colors-typography-spacing-and-component-styling-appropriate-for-a-generic-app-builder-welcome-experience-avoid-blue-purple-as-primary-colors",
+      "featureTitle": "Apply a coherent, distinct visual theme across the app (colors, typography, spacing, and component styling) appropriate for a generic app builder welcome experience; avoid blue/purple as primary colors.",
+      "files": [
+        "frontend/index.css",
+        "frontend/src/App.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
